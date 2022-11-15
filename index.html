@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+    <style>
+        .service { border: 2px solid rgb(6, 49, 59);
+            width: fit-content;
+            max-height: fit-content;
+            background-color: rgb(184, 216, 133);
+            float: left;
+            font-size: 1.1em;
+            font-weight: 300;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {text-align: center;}
+        form {margin: 10%}
+        
+        fieldset {
+            box-sizing: border-box;
+            width: fit-content;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="service">
+    <h2>How would you rate the quality of our service?</h2>
+    <form action="/actualaction.html">
+        <input type="radio" id="notsure" name="notsure" value="notsure">
+        <label for="notsure">I`m not sure.</label><br>
+        <input type="radio" id="ok" name="ok" value="ok">
+        <label for="ok">Good.</label><br>
+        <input type="radio" id="couldbetter" name="couldbetter" value="couldbetter">
+        <label for="couldbetter">I liked it, but some things could`ve been better.</label><br>
+        <input type="radio" id="awful" name="awful" value="awful">
+        <label for="awful">It was awful.</label><br>
+        <input type="radio" id="love" name="love" value="love">
+        <label for="love">I really loved it.</label><br>
+        <input type="radio" id="nocomment" name="nocomment" value="nocomment">
+        <label for="nocomment">No comment.</label><br><br>
+        
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Alexander"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Wagner"><br>
+        <label for="roomnumber">Roomnumber:</label><br>
+        <input type="text" id="roomnumber" name="roomnumber" value="???"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+</div>
+
+<fieldset>
+<legend>Curriculum Vitae</legend>
+<form action="" method="post">
+    <h1>ZAKLADNE UDAJE</h1>
+    <h3>Zacnite zadanim vasich osobnych a kontaktnych udajov.</h3>
+      
+    <button type="button">MUZ</button>
+    <button type="button">ZENA</button>
+    <button type="button">Nechcem uviest</button><br>
+        <label for="name">MENO:</label><br>
+        <input type="text" id="name" size="50"><br>
+        <label for="priezvisko">PRIEZVISKO:</label><br>
+        <input type="text" id="priezvisko"size="50" ><br>
+        <h2>Kontaktne udaje</h2><br>
+        <label for="email">E-mailova adresa</label><br>
+        <input type="text" id="email" required size="50" ><br>
+        <label for="phone">Telefonne cislo:</label><br>
+        <input type="tel" id="phone" size="50"><br>
+       <h3>Adresa</h3>
+       <p>Uvedte vasu aktualnu adresu</p>
+       <h4>Vyber Stat</h4>
+       <input list="stat" name="stat">
+       <datalist id="stat">
+         <option value="Slovenska republika" selected>
+         <option value="Ceska republika">
+         <option value="Polsko">
+         <option value="Rakusko">
+         <option value="Ukraina">
+         <option value="Nemecko">
+         <option value="Irsko">
+         <option value="Taliansko">
+         <option value="Francuko">
+         <option value="Spanielsko">
+       </datalist><br>
+        <label for="mesto">Mesto/obec</label><br>
+        <input type="text" id="mesto" size="50"><br>
+
+        
+</form>
+</fieldset>
+
+
+</body>
+</html>
